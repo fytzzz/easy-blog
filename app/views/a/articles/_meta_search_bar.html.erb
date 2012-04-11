@@ -1,0 +1,19 @@
+<table class="tablelist" width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr class="tablecell">
+    <td>标题:</td>
+    <td>
+      <%= f.text_field :title_contains, :class=>"formfield" %>
+    </td>
+    <td>分类:</td>
+    <td>
+      <%= f.select :category_id_equals, Article.selected_categories %>
+    </td>
+  </tr>
+  <tr class="tablecell">
+    <td colspan="6" align="center">
+      <input type="submit" name="submit" id="submit" value="提交" class="formbutton">
+      <%= hidden_field_tag :act, action_name %>
+  </tr>
+</table>
+
+

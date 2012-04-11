@@ -1,0 +1,14 @@
+<div class="article_lists">
+  <div class="nav">
+    <img src="/assets/document.png">文章列表
+  </div>
+  <ul>
+    <% @articles.each do |article| %>
+        <li><%= link_to article.title, article_slug(article) %>
+          &nbsp&nbsp&nbsp
+          <span class="mute">阅读量(<%= article.views_count %>+)|发表于 <%= format_time(article.created_at) %></span>
+        </li>
+    <% end %>
+  </ul>
+</div>
+<%= paginate @articles %>

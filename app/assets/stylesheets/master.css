@@ -1,0 +1,394 @@
+/*字体引入*/
+@font-face {
+    font-family: 'Droid Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Droid Sans'), local('DroidSans'), url('http://themes.googleusercontent.com/static/fonts/droidsans/v2/s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Droid Serif'), local('DroidSerif'), url('http://themes.googleusercontent.com/static/fonts/droidserif/v2/0AKsP294HTD-nvJgucYTaIbN6UDyHWBl620a-IRfuBk.woff') format('woff');
+}
+
+/*全局基本元素样式设置*/
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+pre, code {
+    font-family: "DejaVu Sans Mono", Monaco, Consolas, monospace;
+}
+
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #996666;
+    font-family: "Droid Serif", serif;
+    font-weight: normal;
+    line-height: 1;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+pre, code {
+    font-size: 12px;
+}
+
+pre {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 10px 0 10px 10px;
+}
+
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #CCCCCC;
+    border-right: 0 solid #CCCCCC;
+    border-style: solid;
+    border-width: 1px 0 0;
+    clear: both;
+    height: 0;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 19px;
+}
+
+a {
+    color: #993333;
+}
+
+html body {
+    height: 100%;
+}
+
+/*html和body背景*/
+html {
+    background-color: #F9F6F3;
+    background-image: url("/assets/gitrails/html_bg.png");
+    background-position: center top;
+    background-repeat: repeat
+}
+
+body {
+    font: 13px/1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+    font-size: 13px;
+    font-family: "Droid Sans", sans-serif;
+    color: #000000;
+    background-position: center top;
+    background-repeat: repeat-x;
+    background-image: url("/assets/gitrails/body_bg.png");
+}
+
+/*------------wrapper---------------*/
+#wrapper {
+    min-height: 100%;
+}
+
+/*头部样式*/
+header[role="banner"] {
+    color: #CC9999;
+    height: 130px;
+    overflow: hidden;
+    display: block;
+}
+
+header[role="banner"] a {
+    color: #FFFFFF;
+}
+
+header[role="banner"] h1 {
+    background-image: url("/assets/gitrails/gitrails.png");
+    background-position: center 20px;
+    background-repeat: no-repeat;
+    color: transparent;
+    font-size: 0;
+    height: 130px;
+    overflow-x: hidden;
+    text-indent: -99999px;
+}
+
+header[role="banner"] p {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    height: 100px;
+    line-height: 1.5;
+    margin: 8px 0 0;
+    overflow: hidden;
+    padding: 10px 10px 0;
+    color: #FFF;
+    text-indent: 10px;
+    z-index: 9999;
+}
+
+/*---------main-------------*/
+div[role="main"] {
+    overflow: hidden;
+    margin-top: 30px;
+    border-radius: 3px;
+    background-color: #FFF;
+}
+
+div[role="main"].box-shadow {
+    filter: progid:DXImageTransform.Microsoft.Shadow(color = '#969696', Direction = 135, Strength = 5); /*for ie6,7,8*/
+    -moz-box-shadow: 2px 2px 5px #969696; /*firefox*/
+    -webkit-box-shadow: 2px 2px 5px #969696; /*webkit*/
+    box-shadow: 2px 2px 5px #969696; /*opera或ie9*/
+}
+
+/*菜单样式*/
+div[role="menu"] {
+    color: #FFF;
+    background-color: #F9F6F3;
+    background-image: url("/assets/gitrails/menu_bg1.gif");
+    background-position: center top;
+    background-repeat: repeat-x; /*margin-top: 10px;*/
+}
+
+div[role="menu"] a {
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize
+}
+
+div[role="menu"] a.selected {
+    background-color: #FFF;
+    color: #8E2E2E
+}
+
+div[role="content"] {
+    padding: 1em 1.5em;
+    min-height: 450px;
+}
+
+/*-----------首页文章列表------------*/
+.article_lists .nav {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+}
+
+.article_lists .nav img {
+    margin-bottom: -2px;
+    margin-right: 2px;
+}
+
+.article_lists li {
+    padding: 1px 0;
+    list-style-type: none;
+}
+
+.icon_download {
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 1px 0 1px 21px;
+    background-image: url("/assets/gitrails/icon_download.png");
+}
+
+.mute, .mute a {
+    color: #BBBBBB;
+}
+
+hr {
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #DDDDDD;
+}
+
+div[role="main"] > hr {
+    margin-left: 10px; /*margin-right: 10px;*/
+}
+
+blockquote {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #FFFFFF;
+    color: #332211;
+    font-family: "Droid Serif", serif;
+    font-size: 15px;
+    margin: 0 0 20px;
+    padding: 20px 20px 0;
+}
+
+blockquote cite {
+    color: #999999;
+    display: block;
+    font-family: "Droid Sans", sans-serif;
+    font-style: normal;
+    margin: -15px 0 20px;
+}
+
+/*表单样式*/
+.form_demo {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+th, td, caption {
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+}
+
+.form_demo th, .form_demo td {
+    padding: 0 0 20px 10px;
+}
+
+.form_demo th {
+    text-align: right;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.form_demo tr th:first-child {
+    padding-left: 0;
+}
+
+input, button, select, textarea {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.input_full {
+    width: 100%;
+}
+
+:invalid {
+    box-shadow: none;
+}
+
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-box-sizing: border-box;
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border-color: #848484 #C1C1C1 #E1E1E1;
+    border-radius: 0 0 0 0;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
+    font-size: 13px;
+    height: 1.8em;
+    outline: 0 none;
+    padding: 2px 3px;
+}
+
+/*分页的样式*/
+/*.pagination {*/
+/*display: block;*/
+/*height: 0;*/
+/*text-align: center;*/
+/*margin-bottom: 5px;*/
+/*}*/
+
+/*.pagination > span {*/
+/*border: 1px solid #993333;*/
+/*padding: 0.5em 0.7em;*/
+/*margin-right: 2px;*/
+/*}*/
+
+/*.pagination .current {*/
+/*background-color: #993333;*/
+/*color: #FFF;*/
+/*}*/
+
+/***** Flash & error messages ****/
+#errorExplanation, div.flash-tip, .nodata, .warning {
+    padding: 4px 4px 4px 30px;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    border: 2px solid;
+}
+
+div.flash-tip {
+    margin-top: 0;
+}
+
+div.flash-tip.error, #errorExplanation {
+    background: url(/assets/gitrails/exclamation.png) 8px 50% no-repeat;
+    background-color: #ffe3e3;
+    border-color: #dd0000;
+    color: #880000;
+}
+
+div.flash-tip.notice {
+    background: url(/assets/gitrails/true.png) 8px 5px no-repeat;
+    background-color: #dfffdf;
+    border-color: #9fcf9f;
+    color: #005f00;
+}
+
+div.flash-tip.warning {
+    background: url(/assets/gitrails/warning.png) 8px 5px no-repeat;
+    background-color: #FFEBC1;
+    border-color: #FDBF3B;
+    color: #A6750C;
+    text-align: left;
+}
+
+/*---events--*/
+.events dl {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.events dl img {
+    margin-bottom: -3px;
+}
+
+.events dd {
+    padding: 5px 0 0 20px;
+    text-indent: 20px;
+}
+
+/*------------notice-----------------*/
+.tips {
+    padding: 10px 15px;
+}
+
+.tips .opts {
+    float: right;
+}
+
+/*footer样式*/
+.footer {
+    border-top: 1px solid #DDDDDD;
+    margin: 1.5em 0 0;
+    overflow: hidden;
+    padding: 1.5em 0 0;
+    color: #000;
+}
+
+
+
+
+
+
+
+

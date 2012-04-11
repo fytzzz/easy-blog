@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  login: MyString
+  hashed_password: MyString
+  name: MyString
+  email: MyString
+  admin: false
+  status: MyString
+  last_login_on: 2011-11-16 23:03:35
+  language: MyString
+  auth_source_id: 1
+  types: MyString
+  identity_url: MyString
+  mail_notification: MyString
+  salt: MyString
+
+two:
+  login: MyString
+  hashed_password: MyString
+  name: MyString
+  email: MyString
+  admin: false
+  status: MyString
+  last_login_on: 2011-11-16 23:03:35
+  language: MyString
+  auth_source_id: 1
+  types: MyString
+  identity_url: MyString
+  mail_notification: MyString
+  salt: MyString

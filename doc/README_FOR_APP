@@ -1,0 +1,29 @@
+Use this README file to introduce your application and point to useful places in the API for learning more.
+Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+
+==============================================
+when initialize project and run rake db:create
+rake aborted!
+Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes.
+#Embed the V8 Javascript interpreter into Ruby.
+#http://rubydoc.info/gems/therubyracer/0.9.8/frames
+gem 'therubyracer', '>= 0.8.2'
+===============================================
+
+#使git忽略某些文件
+http://blog.toolib.net/cnmahj/2011/05/%E4%BD%BFgit%E5%BF%BD%E7%95%A5%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6/
+
+#vim复制
+光标放到第五行，
+输入：y6y
+光标放到第12行，
+输入：p
+#vim删除一行
+dd
+删除一行：dd
+
+删除一个单词/光标之后的单词剩余部分：dw
+
+删除当前字符：x
+
+光标之后的该行部分：d$

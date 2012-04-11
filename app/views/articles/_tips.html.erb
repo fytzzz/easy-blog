@@ -1,0 +1,13 @@
+<div class="tips">
+  <div class="opts">
+    <a href="#" onclick="return false;">阅读量</a>
+    <span class="mute">(<%= record.views_count %>+)</span>
+  </div>
+  <div class="tags">
+    标签:
+    <% @article.tags.each do |tag| %>
+        <%= link_to tag.name, "/tags/#{tag.name}" %>
+    <% end %>
+    <span class="mute">(<%= @article.tags.size %>+)</span>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+10
+
+dir
+3467
+svn://192.168.0.30/source/web/ipvdportal/public/xheditor
+svn://192.168.0.30
+
+
+
+2011-11-02T04:25:08.375184Z
+3357
+llj
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ea9be2be-fcf5-7e40-a74b-be487dbb1077
+
+xheditor-zh-cn.min.js
+file
+
+
+
+
+2011-11-02T04:28:55.000000Z
+4a62338430c540148d82a44dfbb8f45a
+2011-11-02T04:25:08.375184Z
+3357
+llj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+56740
+
+xheditor_emot
+dir
+
+xheditor_plugins
+dir
+
+xheditor_skin
+dir
+

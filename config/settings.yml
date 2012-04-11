@@ -1,0 +1,67 @@
+# Copyright (C) 2011-2012  fyt
+
+# DO NOT MODIFY THIS FILE !!!!!!!!!
+# Settings can be defined through the application in Admin -> Settings
+
+app_title:
+  default: Gitrails-foyoto个人博客
+app_author:
+  default: foyoto
+site_url:
+  default: 'http://www.gitrails.com'
+portalitems:
+  serialized: true
+  default:
+    articles: {caption: '首页',url: '/', class: 'grid_1',controller_name: 'home'}
+    blog: {caption: '博客',url: '/blog', class: 'grid_1',controller_name: 'articles'}
+#    tasks: {caption: '任务',url: '#', class: 'grid_1'}
+#    links: {caption: '网址', url: '#' , class: 'grid_1'}
+#    photos: {caption: '图片', url: '#' , class: 'grid_1' }
+#    music: {caption: '音乐', url: '#', class: 'grid_1'}
+    abouts: {caption: '关于我', url: '/abouts' , class: 'grid_1',controller_name: 'abouts'}
+adminitems:
+  serialized: true
+  default:
+    main: '网站内容管理'
+    users: '用户管理'
+    roles: '角色与权限'
+    links: '枚举值'
+    configs: '系统配置'
+    caches: '系统信息'
+    logs: '系统日志'
+sidebar_renders: #后台左侧工具条layout设置
+  serialized: true
+  default:
+    main:
+     - main
+    publish:
+     - publish
+     - articles
+     - categories
+     - faqs
+     - asks
+     - notices
+visible_types:  #是否可见类型
+  serialized: true
+  default:
+    1 : '显示'
+    0 : '隐藏'
+time_format:
+  default: '%Y-%m-%d %H:%M'
+date_format:
+  default: '%Y-%m-%d'
+category_types:
+  serialized: true
+  default:
+    1 : '技术备忘'
+aboutme:
+  default: |-
+    09年大学毕业一出来就开始接触Ruby on Rails，到现在为止快3年了，一直从事Rails相关web项目的开发工作。
+    之前是在武汉一家公司干过一年，10年3月18号来到深圳，现在来深圳一年多，快两年了。<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp毕业在现在，值得一说的是，非常感谢在我工作中给与我帮助的一些朋友。在武汉工作的时候，皮哥和小佘; 在深圳前一家公司的杨总和龙哥。遇到他们算是一种人生的财富吧！<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp之前在<a href="http://foyoto.iteye.com/" target="_blank">iteye</a>和<a href="http://hi.baidu.com/fruby/blog" target="_blank">百度</a>也有博客，不过以后可能都会集中到这里。<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp如果你是一个Rails爱好者，想和我进行Rails相关技术方面的交流，请加我的QQ247228889或发邮件到<a href="mailto:foyoto@gmail.com">foyoto@gmail.com</a>与我联系，谢谢！
+footer:
+  serialized: true
+  default:
+    author: foyoto

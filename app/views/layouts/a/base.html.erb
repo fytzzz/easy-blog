@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= Setting[:app_title] %></title>
+  <%= stylesheet_link_tag "a/system" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= yield :head %>
+</head>
+<body>
+<div id="wappper">
+  <!--头部-导航栏-->
+  <%= render :partial => "layouts/a/header" %>
+  <!--消息提示-->
+  <%= render_flash_messages %>
+  <!--主题部分-->
+  <div id="main" class="<%= controller_name == 'main' ? "nosidebar" : '' %>">
+    <div id="sidebar">
+      <%= yield :sidebar %>
+    </div>
+    <div id="content">
+      <div class="opts">
+        <%= page_nav_opts %>
+      </div>
+      <h2><%= page_nav_break_crumbs %></h2>
+      <%= yield %>
+    </div>
+    <%#= render_for_sidebar %>
+  </div>
+</div>
+</body>
+</html>

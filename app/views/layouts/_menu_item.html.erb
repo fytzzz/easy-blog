@@ -1,0 +1,5 @@
+<div class="container_12" role="menu">
+  <% Setting[:portalitems].each do |k, v| %>
+      <%= link_to v['caption'], v['url'], :class=>"#{v['class']} #{v['controller_name'] == controller_name ? 'selected' : ''}", :style=>v['style'] %>
+  <% end %>
+</div>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  category_id: 1
+  user_id: 1
+  title: MyString
+  content: MyText
+  comment_counts: 1
+  view_counts: 1
+  visible: false
+
+two:
+  category_id: 1
+  user_id: 1
+  title: MyString
+  content: MyText
+  comment_counts: 1
+  view_counts: 1
+  visible: false

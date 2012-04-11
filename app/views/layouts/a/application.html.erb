@@ -1,0 +1,8 @@
+<% unless controller_name == 'main' && action_name == 'index' %>
+	<% content_for :sidebar do %>
+		<h3>管理</h3>
+	  <%= render :partial => 'layouts/a/sidebar' %>
+	<% end %>
+<% end %>
+
+<%= render :file => "layouts/a/base" %>

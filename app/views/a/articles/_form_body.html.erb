@@ -1,0 +1,43 @@
+<tr class="tableheader">
+  <td colspan="6"><%= tdtitle %></td>
+</tr>
+<tr class="tablecell">
+  <td>标题&nbsp<span style="color:#F00;">* </span>:</td>
+  <td colspan="3">
+    <%= f.text_field :title, :size=>60, :class=>"formfield" %>
+  </td>
+</tr>
+<tr class="tablecell">
+  <td width="80" valign="top">所属类别:</td>
+  <td colspan="6">
+    <%= f.select :category_id, Article.selected_categories, :style=>"width:100px;" %>
+  </td>
+</tr>
+<tr class="tablecell">
+  <td valign="top">内容简介&nbsp<span style="color:#F00;">* </span>:<br/></td>
+  <td colspan="6"><%= f.text_area :content, :class=>"xheditor", :cols=>"100", :rows=>"20" %></td>
+</tr>
+<tr class="tablecell">
+  <td>路由标识<span style="color:#F00;">* </span>:</td>
+  <td colspan="3">
+    <%= f.text_field :permalink, :size=>60, :class=>"formfield" %>
+  </td>
+</tr>
+<tr class="tablecell">
+  <td>标签<span style="color:#F00;">* </span>:</td>
+  <td colspan="3">
+    <%= text_field_tag :tags, f.object.tag_list.join(",") %>
+  </td>
+</tr>
+<tr class="tablecell">
+  <td>是否可见:</td>
+  <td colspan="6">
+    <%= f.select :visible, Setting[:visible_types].invert %>
+  </td>
+</tr>
+<tr class="tablecell">
+  <td colspan="7" align="center">
+    <input type="submit" name="submit" id="submit" value="提交" class="formbutton">
+    <%= hidden_field_tag :act, action_name %>
+    <a class="formbutton" style='padding:5px 7px 1px 7px;color:#FFF;' href='/a/articles/new'>重置</a>
+</tr>

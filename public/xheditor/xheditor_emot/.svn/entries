@@ -1,0 +1,40 @@
+10
+
+dir
+3467
+svn://192.168.0.30/source/web/ipvdportal/public/xheditor/xheditor_emot
+svn://192.168.0.30
+
+
+
+2011-11-02T04:25:08.375184Z
+3357
+llj
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ea9be2be-fcf5-7e40-a74b-be487dbb1077
+
+default
+dir
+
+ipb
+dir
+
+msn
+dir
+
+pidgin
+dir
+

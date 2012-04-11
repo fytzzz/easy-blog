@@ -1,0 +1,13 @@
+<%
+   record = list
+%>
+<div class="grid_12">
+  <h2>
+    <%= link_to record.title, article_path(record) %>
+  </h2>
+
+  <p>
+    <%= truncate(raw(record.content), :length => 255) %>
+  </p>
+  <%= render :partial => "footer", :locals => {:record => record} %>
+</div>

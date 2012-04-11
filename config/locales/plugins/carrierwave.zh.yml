@@ -1,0 +1,7 @@
+# Sample localization file for Kaminari. You can override these values in your app's locales file if you want.
+
+zh:
+  errors:
+    messages:
+      carrierwave_processing_error: '处理失败'
+      carrierwave_integrity_error: '文件类型不正确'

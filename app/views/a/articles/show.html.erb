@@ -1,0 +1,31 @@
+<table class="tablelist" width="100%" height="25" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+  <tr class="tableheader">
+    <td colspan="2">查看文章<%= link_to("编辑", edit_a_article_path(@article), :style=>"float:right;color:#FFF;") %></td>
+  </tr>
+  <tr class="tablecell">
+    <td>标题:</td>
+    <td><%= @article.title %></td>
+  </tr>
+  <tr class="tablecell">
+    <td>分类:</td>
+    <td><%= @article.category_txt %></td>
+  </tr>
+  <tr class="tablecell">
+    <td>内容:</td>
+    <td><%= raw @article.content %></td>
+  </tr>
+  <tr class="tablecell">
+    <td>标签:</td>
+    <td><%= @article.tag_list %></td>
+  </tr>
+  <tr class="tablecell">
+    <td>是否可见:</td>
+    <td><%= @article.visible_txt %></td>
+  </tr>
+  <tr class="tablecell">
+    <td>创建时间:</td>
+    <td><%= format_time(@article.created_at) %></td>
+  </tr>
+  </tbody>
+</table>

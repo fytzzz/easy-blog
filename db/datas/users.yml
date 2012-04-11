@@ -1,0 +1,35 @@
+---
+users_001:
+  id: 1
+  login: foyoto
+  hashed_password: 5a028f59f5760388cd928af01b74fb5b7fb935d9
+  name: foyoto
+  email: foyoto@gmail.net
+  admin: 1
+  status: '1'
+  last_login_on: 2011-10-27 12:04:02.000000000Z
+  language: zh
+  auth_source_id: !!null 
+  types: User
+  identity_url: !!null 
+  mail_notification: all
+  salt: d080de952e213b65a8fa57bfb349da45
+  created_at: 2011-09-16 21:16:26.000000000Z
+  updated_at: 2011-10-27 12:04:02.000000000Z
+users_002:
+  id: 2
+  login: ''
+  hashed_password: ''
+  name: Anonymous
+  email: ''
+  admin: 0
+  status: '0'
+  last_login_on: !!null 
+  language: ''
+  auth_source_id: !!null 
+  types: AnonymousUser
+  identity_url: !!null 
+  mail_notification: only_my_events
+  salt: !!null 
+  created_at: 2011-09-19 23:00:28.000000000Z
+  updated_at: 2011-09-19 23:00:28.000000000Z
