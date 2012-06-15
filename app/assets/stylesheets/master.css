@@ -89,7 +89,7 @@ html body {
 /*html和body背景*/
 html {
     background-color: #F9F6F3;
-    background-image: url("/assets/gitrails/html_bg.png");
+    background-image: url("/assets/easy_blog/html_bg.png");
     background-position: center top;
     background-repeat: repeat
 }
@@ -101,7 +101,7 @@ body {
     color: #000000;
     background-position: center top;
     background-repeat: repeat-x;
-    background-image: url("/assets/gitrails/body_bg.png");
+    background-image: url("/assets/easy_blog/body_bg.png");
 }
 
 /*------------wrapper---------------*/
@@ -122,7 +122,7 @@ header[role="banner"] a {
 }
 
 header[role="banner"] h1 {
-    background-image: url("/assets/gitrails/gitrails.png");
+    background-image: url("/assets/easy_blog/easy_blog.png");
     background-position: center 20px;
     background-repeat: no-repeat;
     color: transparent;
@@ -163,7 +163,7 @@ div[role="main"].box-shadow {
 div[role="menu"] {
     color: #FFF;
     background-color: #F9F6F3;
-    background-image: url("/assets/gitrails/menu_bg1.gif");
+    background-image: url("/assets/easy_blog/menu_bg1.gif");
     background-position: center top;
     background-repeat: repeat-x; /*margin-top: 10px;*/
 }
@@ -206,7 +206,7 @@ div[role="content"] {
     background-position: left center;
     background-repeat: no-repeat;
     padding: 1px 0 1px 21px;
-    background-image: url("/assets/gitrails/icon_download.png");
+    background-image: url("/assets/easy_blog/icon_download.png");
 }
 
 .mute, .mute a {
@@ -332,21 +332,21 @@ div.flash-tip {
 }
 
 div.flash-tip.error, #errorExplanation {
-    background: url(/assets/gitrails/exclamation.png) 8px 50% no-repeat;
+    background: url(/assets/easy_blog/exclamation.png) 8px 50% no-repeat;
     background-color: #ffe3e3;
     border-color: #dd0000;
     color: #880000;
 }
 
 div.flash-tip.notice {
-    background: url(/assets/gitrails/true.png) 8px 5px no-repeat;
+    background: url(/assets/easy_blog/true.png) 8px 5px no-repeat;
     background-color: #dfffdf;
     border-color: #9fcf9f;
     color: #005f00;
 }
 
 div.flash-tip.warning {
-    background: url(/assets/gitrails/warning.png) 8px 5px no-repeat;
+    background: url(/assets/easy_blog/warning.png) 8px 5px no-repeat;
     background-color: #FFEBC1;
     border-color: #FDBF3B;
     color: #A6750C;

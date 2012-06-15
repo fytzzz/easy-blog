@@ -4,11 +4,11 @@
 # Settings can be defined through the application in Admin -> Settings
 
 app_title:
-  default: Gitrails-foyoto个人博客
+  default: EasyBlog-foyoto个人博客
 app_author:
   default: foyoto
 site_url:
-  default: 'http://www.gitrails.com'
+  default: 'http://www.easy_blog.com'
 portalitems:
   serialized: true
   default:

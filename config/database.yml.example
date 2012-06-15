@@ -11,7 +11,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: gitrails
+  database: easy_blog
   pool: 5
   username: root
   password: root
@@ -22,7 +22,7 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: gitrails
+  database: easy_blog
   pool: 5
   username: root
   password: root
@@ -30,7 +30,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: gitrails
+  database: easy_blog
   pool: 5
   username: root
   password: root

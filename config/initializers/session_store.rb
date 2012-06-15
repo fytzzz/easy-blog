@@ -1,8 +1,8 @@
 # Be sure to restart your server when you modify this file.
 
-Gitrails::Application.config.session_store :cookie_store, key: '_gitrails_session'
+EasyBlog::Application.config.session_store :cookie_store, key: '_easy_blog_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# Gitrails::Application.config.session_store :active_record_store
+# EasyBlog::Application.config.session_store :active_record_store
